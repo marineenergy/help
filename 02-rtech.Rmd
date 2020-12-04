@@ -1,0 +1,6 @@
+# R Technicians {#rtech}
+
+## Updating dynamic content
+
+- [Interactions]: re-knit env.Rmd.
+
