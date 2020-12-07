@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.4)  4 DEC 2020 19:22
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.4)  7 DEC 2020 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,45 +778,51 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 ]
 Chapter 2.
 
-LaTeX Warning: Reference `intro' on page 7 undefined on input line 163.
+Overfull \hbox (48.75pt too wide) in paragraph at lines 167--167
+[]\TU/lmtt/m/n/10 ln -s /share/github/mhk-env_shiny-apps/report-gen2 /srv/shiny
+-server/report[] 
+ []
 
 
-LaTeX Warning: Reference `methods' on page 7 undefined on input line 163.
+LaTeX Warning: Reference `intro' on page 7 undefined on input line 172.
+
+
+LaTeX Warning: Reference `methods' on page 7 undefined on input line 172.
 
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
-[7] [8]
-Chapter 3.
-[9
-
-] [10
+[7] [8] [9] [10
 
 ]
-Chapter 4.
+Chapter 3.
 [11] [12
 
 ]
-Chapter 5.
+Chapter 4.
 [13] [14
 
 ]
-Chapter 6.
-(./bookdown-demo.bbl [15] [16
+Chapter 5.
+[15] [16
 
-]) [17] (./bookdown-demo.aux)
+]
+Chapter 6.
+(./bookdown-demo.bbl [17] [18
+
+]) [19] (./bookdown-demo.aux)
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: CF18D3A7FEA9E9FDB836D73643EFC619;1557.
+(rerunfilecheck)             Checksum: B666A208B3C4E035E7C1A7643CD831F4;1691.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17100 strings out of 479393
- 295701 string characters out of 5879736
- 750401 words of memory out of 5000000
- 36252 multiletter control sequences out of 15000+600000
+ 17101 strings out of 479393
+ 295715 string characters out of 5879736
+ 750444 words of memory out of 5000000
+ 36253 multiletter control sequences out of 15000+600000
  541555 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,8n,118p,518b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (17 pages).
+Output written on bookdown-demo.pdf (19 pages).

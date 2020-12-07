@@ -120,7 +120,7 @@
 
 \title{A Minimal Book Example}
 \author{Yihui Xie}
-\date{2020-12-04}
+\date{2020-12-07}
 
 \begin{document}
 \maketitle
@@ -159,6 +159,15 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 \item
   \url{https://github.com/mhk-env/mhk-env_server-software}
 \end{itemize}
+
+Symbolically link (\texttt{ln\ -s}) a Shiny server app from within the Github repo (\texttt{mhk-env\_shiny-apps}) to the active folder \texttt{/srv/shiny-server} from where Shiny apps get served:
+
+\begin{verbatim}
+ln -s /share/github/mhk-env_shiny-apps/report-gen2 /srv/shiny-server/report
+\end{verbatim}
+
+\hypertarget{old-bookdown}{%
+\section{OLD (bookdown)}\label{old-bookdown}}
 
 You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
 
@@ -244,8 +253,20 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 \hypertarget{edit-in-openei}{%
 \section{Edit in OpenEI}\label{edit-in-openei}}
 
+\begin{itemize}
+\tightlist
+\item
+  Regulations edit
+\end{itemize}
+
 \hypertarget{suggest-in-google-sheets}{%
 \section{Suggest in Google Sheets}\label{suggest-in-google-sheets}}
+
+\begin{itemize}
+\tightlist
+\item
+  Suggest and then get reviewed by R-technicians for updating.
+\end{itemize}
 
 \hypertarget{applications}{%
 \chapter{Applications}\label{applications}}
