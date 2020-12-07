@@ -4,6 +4,15 @@
 
 - https://github.com/mhk-env/mhk-env_server-software
 
+
+Symbolically link (`ln -s`) a Shiny server app from within the Github repo (`mhk-env_shiny-apps`) to the active folder `/srv/shiny-server` from where Shiny apps get served:
+
+```
+ln -s /share/github/mhk-env_shiny-apps/report-gen2 /srv/shiny-server/report
+```
+
+## OLD (bookdown)
+
 You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
