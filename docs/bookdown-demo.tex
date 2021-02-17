@@ -120,7 +120,7 @@
 
 \title{A Minimal Book Example}
 \author{Yihui Xie}
-\date{2020-12-07}
+\date{2021-02-17}
 
 \begin{document}
 \maketitle
@@ -169,73 +169,7 @@ ln -s /share/github/mhk-env_shiny-apps/report-gen2 /srv/shiny-server/report
 \hypertarget{old-bookdown}{%
 \section{OLD (bookdown)}\label{old-bookdown}}
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
-
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, }\FloatTok{.1}\NormalTok{, }\FloatTok{.1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
-  \DataTypeTok{booktabs =} \OtherTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+This website describes how to use open-source software and data to construct the \href{https://MarineEnergy.app}{MarineEnergy.app} Toolkit for Enviromental Compliance, organized for now by audience.
 
 \hypertarget{rtech}{%
 \chapter{R Technicians}\label{rtech}}
@@ -256,16 +190,45 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 \begin{itemize}
 \tightlist
 \item
-  Regulations edit
+  \href{https://marineenergy.app/regs.html}{Regulations}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://openei.org/wiki/MarineEnergyApp}{MarineEnergyApp \textbar{} OpenEI}
+  \end{itemize}
 \end{itemize}
 
 \hypertarget{suggest-in-google-sheets}{%
 \section{Suggest in Google Sheets}\label{suggest-in-google-sheets}}
 
 \begin{itemize}
-\tightlist
 \item
   Suggest and then get reviewed by R-technicians for updating.
+\item
+  \href{https://marineenergy.app/projects.html}{Projects}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://docs.google.com/spreadsheets/d/1HC5hXyi2RQSHevnV7rvyk748U5-X3iUw70ewHEfrHm0/edit\#gid=793817660}{projects}
+  \end{itemize}
+\item
+  \href{https://marineenergy.app/ferc.html}{Documents}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://docs.google.com/spreadsheets/d/1c9pFSkQyQvLFpyMT4KlBoSFA_wtJ_iNj8YmNX_RZmXc/edit\#gid=951079264}{documents}
+  \end{itemize}
+\item
+  \href{https://shiny.marineenergy.app/report/?nav=Spatial}{Spatial}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://docs.google.com/spreadsheets/d/1MMVqPr39R5gAyZdY2iJIkkIdYqgEBJYQeGqDk1z-RKQ/edit\#gid=936111013}{spatial}
+  \end{itemize}
 \end{itemize}
 
 \hypertarget{applications}{%

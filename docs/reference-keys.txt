@@ -1,9 +1,12 @@
-fig:nice-fig
-tab:nice-tab
 prerequisites
-intro
-literature
-methods
+sysadmins
+server-software
+old-bookdown
+rtech
+updating-dynamic-content
+comm
+edit-in-openei
+suggest-in-google-sheets
 applications
 example-one
 example-two

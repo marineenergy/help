@@ -2,8 +2,17 @@
 
 ## Edit in OpenEI
 
-- Regulations edit
+- [Regulations](https://marineenergy.app/regs.html) 
+  * [MarineEnergyApp | OpenEI](https://openei.org/wiki/MarineEnergyApp)
 
 ## Suggest in Google Sheets
 
-- Suggest and then get reviewed by R-technicians for updating.
+Suggest and then get reviewed by R-technicians for updating.
+
+- [Projects](https://marineenergy.app/projects.html)
+  * [projects](https://docs.google.com/spreadsheets/d/1HC5hXyi2RQSHevnV7rvyk748U5-X3iUw70ewHEfrHm0/edit#gid=793817660)
+- [Documents](https://marineenergy.app/ferc.html)
+  * [documents](https://docs.google.com/spreadsheets/d/1c9pFSkQyQvLFpyMT4KlBoSFA_wtJ_iNj8YmNX_RZmXc/edit#gid=951079264)
+- [Spatial ](https://shiny.marineenergy.app/report/?nav=Spatial)
+  * [spatial](https://docs.google.com/spreadsheets/d/1MMVqPr39R5gAyZdY2iJIkkIdYqgEBJYQeGqDk1z-RKQ/edit#gid=936111013)
+
