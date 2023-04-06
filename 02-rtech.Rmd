@@ -6,6 +6,7 @@
 
 ### Shiny App Content Updates
 To render changes made to content in a Shiny app, navigate to the folder that contains the application files to run the app. Shiny apps are served from a standard folder where they are symbolically linked to source files. These folders contain the global.R, ui.R, server.R scripts that run the app.
+
 - global.R: functions used in ui.R and server.R can be defined here, sourced here from other files or in loaded libraries
 - ui.R: defines the user interface, or display, of the contents in the shiny app; this is navigable through the bookmarks in the lower left menu of the Code panel in RStudio
 - server.R: back-end server functions to populate the user interface; this is also navigable through the bookmarks in the lower left menu of the Code panel in RStudio
@@ -14,10 +15,11 @@ To render changes made to content in a Shiny app, navigate to the folder that co
 ### Projects Page
 
 The projects page is accessed from the marineenergy.app Reporting Tool. Projects shown on the map and timeline diagram are updated periodically based on input from stakeholders. The content is updated through a series of steps as outlined below.
+
 - Enter new project information into: [data | marineenergy.app - Google Sheet](https://docs.google.com/spreadsheets/d/1MTlWQgBeV4eNbM2JXNXU3Y-_Y6QcOOfjWFyKWfdMIQM/edit?usp=sharing)
--- If a new project permit type is needed, add this to the list presented on the project_permit_types worksheet
+    - If a new project permit type is needed, add this to the list presented on the project_permit_types worksheet
 - Use RStudio to open the apps_dev/scripts/update_all.R script within the /share/github/apps_dev repository branch
--- Run the update_projects() function
---- Note that this function is defined in the apps_dev/scripts/update.R script
+    - Run the update_projects() function
+        - Note that this function is defined in the apps_dev/scripts/update.R script
 - Commit changes
 
