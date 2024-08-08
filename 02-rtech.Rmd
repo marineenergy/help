@@ -18,7 +18,7 @@ The projects page is accessed from the marineenergy.app Reporting Tool. Projects
 
 - Enter new project information into: [data | marineenergy.app - Google Sheet](https://docs.google.com/spreadsheets/d/1MTlWQgBeV4eNbM2JXNXU3Y-_Y6QcOOfjWFyKWfdMIQM/edit?usp=sharing)
     - If a new project permit type is needed, add this to the list presented on the project_permit_types worksheet
-- Use RStudio to open the apps_dev/scripts/update_all.R script within the /share/github/apps_dev repository branch
+- Use RStudio to open the [apps/scripts: /update_all.R](https://github.com/marineenergy/apps/blob/master/scripts/update_all.R) script within the /share/github/apps_dev repository branch
     - Run the update_projects() function
         - Note that this function is defined in the apps_dev/scripts/update.R script
 - Commit changes
