@@ -20,6 +20,24 @@ The projects page is accessed from the marineenergy.app Reporting Tool. Projects
     - If a new project permit type is needed, add this to the list presented on the project_permit_types worksheet
 - Use RStudio to open the [apps/scripts: /update_all.R](https://github.com/marineenergy/apps/blob/master/scripts/update_all.R) script within the /share/github/apps_dev repository branch
     - Run the update_projects() function
-        - Note that this function is defined in the apps_dev/scripts/update.R script
+    - Note that this function is defined in the apps_dev/scripts/update.R script
 - Commit changes
+
+### BioAssesments Page
+
+The bioassessments page is accessed from the marineenergy.app Reporting Tool in the BioAssessments Tab. BioAssessments can be updated periodically based on input from stakeholders. The content is updated through a series of steps as outlined below.
+
+- Enter new BioAssessment project information into: [databa | marineenergy.app - Google Sheet] (https://docs.google.com/spreadsheets/d/17QQ9A0G0SxIOfiuFCJFzikQ088cQbO_MMTBbjEHa9FU/edit?gid=0#gid=0)
+
+- Use RStudio to open the [apps/scriptsL
+/update.R] (https://github.com/marineenergy/apps/blob/apps_dev/scripts/update.R) script within the share/github/apps_dev repository branch
+  - Run the update_ba() function
+  - Note that this function is defined in the apps_dev/scripts/update.R script
+
+### Edit Documents and BioAssessments and/or excerpts via an RShiny Data Entry Application
+
+The Application to add and/or edit FERC Documents is located here: https://shiny.marineenergy.app/edit/ 
+
+The Application to add and/or edit BioAssessments is located here: https://shiny.marineenergy.app/edit-ba/
+
 
