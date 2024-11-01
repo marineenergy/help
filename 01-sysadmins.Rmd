@@ -1,8 +1,9 @@
 # System Administrators {#sysadmins}
 
 ## Server Software
+This application is hosted on a server in Digital Ocean. # Add detail here about how it is hosted? Maybe move the sentence on line 9 up here?
 
-- https://github.com/mhk-env/mhk-env_server-software
+Detailed documentation of how the server is currently set up is located here: https://github.com/mhk-env/mhk-env_server-software
 
 
 Symbolically link (`ln -s`) a Shiny server app from within the Github repo (`mhk-env_shiny-apps`) to the active folder `/srv/shiny-server` from where Shiny apps get served:
