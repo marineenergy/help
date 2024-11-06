@@ -6,8 +6,8 @@ project:
   - "/.nojekyll"
 
 book:
-  title: "MEtkit Help"
-  subtitle: "Marine Energy Toolkit Help"
+  title: "MEEtkit Help"
+  subtitle: "Marine Energy Environmental Toolkit Help"
   description: "Help documentation to set up, maintain, and use the Marine Energy Toolkit"
   author:
   - name: Benjamin D. Best
