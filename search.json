@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MEtkit Help",
+    "section": "",
+    "text": "1 Welcome",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-the-help-documentation",
+    "href": "index.html#how-to-use-the-help-documentation",
+    "title": "MEtkit Help",
+    "section": "1.1 How to use the help documentation:",
+    "text": "1.1 How to use the help documentation:\nThis help documentation is organized by role, including System Administrators (sysadmins), RShiny Application developers (rtech), and community users (community). Information related to corresponding workflows are located in each section of the help documentation.\nFor information related to server setup and location please refer to the sysadmins section of the documentation. For application development methods and existing workflows to update the application please refer to the rtech section of the help. In order to understand how to contribute to the application as a part of the user community please refer to the community section of the documentation.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "MEtkit Help",
+    "section": "1.2 Prerequisites",
+    "text": "1.2 Prerequisites\nThis is a sample book written in Markdown. You can use anything that Pandoc’s Markdown supports, e.g., a math equation \\(a^2 + b^2 = c^2\\).\nThe bookdown package can be installed from CRAN or Github:\n\ninstall.packages(\"bookdown\")\n# or the development version\n# devtools::install_github(\"rstudio/bookdown\")\n\nRemember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading #.\nTo compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): https://yihui.name/tinytex/.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "sysadmins.html",
+    "href": "sysadmins.html",
+    "title": "2  System Administrators",
+    "section": "",
+    "text": "2.1 Server Software\nThis application is hosted on a server in Digital Ocean. # Add detail here about how it is hosted? Maybe move the sentence on line 9 up here?\nDetailed documentation of how the server is currently set up is located here: https://github.com/mhk-env/mhk-env_server-software\nSymbolically link (ln -s) a Shiny server app from within the Github repo (mhk-env_shiny-apps) to the active folder /srv/shiny-server from where Shiny apps get served:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>System Administrators</span>"
+    ]
+  },
+  {
+    "objectID": "sysadmins.html#server-software",
+    "href": "sysadmins.html#server-software",
+    "title": "2  System Administrators",
+    "section": "",
+    "text": "ln -s /share/github/mhk-env_shiny-apps/report-gen2 /srv/shiny-server/report",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>System Administrators</span>"
+    ]
+  },
+  {
+    "objectID": "sysadmins.html#old-bookdown",
+    "href": "sysadmins.html#old-bookdown",
+    "title": "2  System Administrators",
+    "section": "2.2 OLD (bookdown)",
+    "text": "2.2 OLD (bookdown)\nThis website describes how to use open-source software and data to construct the MarineEnergy.app Toolkit for Enviromental Compliance, organized for now by audience.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>System Administrators</span>"
+    ]
+  },
+  {
+    "objectID": "rtech.html",
+    "href": "rtech.html",
+    "title": "3  R Technicians",
+    "section": "",
+    "text": "3.1 Updating dynamic content\nTODO:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>R Technicians</span>"
+    ]
+  },
+  {
+    "objectID": "rtech.html#updating-dynamic-content",
+    "href": "rtech.html#updating-dynamic-content",
+    "title": "3  R Technicians",
+    "section": "",
+    "text": "Interactions: re-knit env.Rmd.\n\n\n3.1.1 Shiny App Content Updates\nTo render changes made to content in a Shiny app, navigate to the folder that contains the application files to run the app. Shiny apps are served from a standard folder where they are symbolically linked to source files. These folders contain the global.R, ui.R, server.R scripts that run the app.\n\nglobal.R: functions used in ui.R and server.R can be defined here, sourced here from other files or in loaded libraries\nui.R: defines the user interface, or display, of the contents in the shiny app; this is navigable through the bookmarks in the lower left menu of the Code panel in RStudio\nserver.R: back-end server functions to populate the user interface; this is also navigable through the bookmarks in the lower left menu of the Code panel in RStudio\n\n\n\n3.1.2 Projects Page\nThe projects page is accessed from the marineenergy.app Reporting Tool. Projects shown on the map and timeline diagram are updated periodically based on input from stakeholders. The content is updated through a series of steps as outlined below.\n\nEnter new project information into: data | marineenergy.app - Google Sheet\n\nIf a new project permit type is needed, add this to the list presented on the project_permit_types worksheet\n\nUse RStudio to open the apps/scripts: /update_all.R script within the /share/github/apps_dev repository branch\n\nRun the update_projects() function\nNote that this function is defined in the apps_dev/scripts/update.R script\n\nCommit changes\n\n\n\n3.1.3 BioAssesments Page\nThe bioassessments page is accessed from the marineenergy.app Reporting Tool in the BioAssessments Tab. BioAssessments can be updated periodically based on input from stakeholders. The content is updated through a series of steps as outlined below.\n\nEnter new BioAssessment project information into: [databa | marineenergy.app - Google Sheet] (https://docs.google.com/spreadsheets/d/17QQ9A0G0SxIOfiuFCJFzikQ088cQbO_MMTBbjEHa9FU/edit?gid=0#gid=0)\nUse RStudio to open the [apps/scriptsL /update.R] (https://github.com/marineenergy/apps/blob/apps_dev/scripts/update.R) script within the share/github/apps_dev repository branch\n\nRun the update_ba() function\nNote that this function is defined in the apps_dev/scripts/update.R script\n\n\n\n\n3.1.4 Edit Documents and BioAssessments and/or excerpts via an RShiny Data Entry Application\nThe Application to add and/or edit FERC Documents is located here: https://shiny.marineenergy.app/edit/\nThe Application to add and/or edit BioAssessments is located here: https://shiny.marineenergy.app/edit-ba/",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>R Technicians</span>"
+    ]
+  },
+  {
+    "objectID": "community.html",
+    "href": "community.html",
+    "title": "4  Community Members",
+    "section": "",
+    "text": "4.1 Edit in OpenEI",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Community Members</span>"
+    ]
+  },
+  {
+    "objectID": "community.html#edit-in-openei",
+    "href": "community.html#edit-in-openei",
+    "title": "4  Community Members",
+    "section": "",
+    "text": "Regulations\n\nMarineEnergyApp | OpenEI",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Community Members</span>"
+    ]
+  },
+  {
+    "objectID": "community.html#suggest-in-google-sheets",
+    "href": "community.html#suggest-in-google-sheets",
+    "title": "4  Community Members",
+    "section": "4.2 Suggest in Google Sheets",
+    "text": "4.2 Suggest in Google Sheets\nSuggest and then get reviewed by R-technicians for updating.\n\nProjects\n\nprojects\n\nDocuments\n\ndocuments\n\nSpatial\n\nspatial",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Community Members</span>"
+    ]
+  },
+  {
+    "objectID": "application.html",
+    "href": "application.html",
+    "title": "5  Applications",
+    "section": "",
+    "text": "5.1 Example one",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Applications</span>"
+    ]
+  },
+  {
+    "objectID": "application.html#example-two",
+    "href": "application.html#example-two",
+    "title": "5  Applications",
+    "section": "5.2 Example two",
+    "text": "5.2 Example two",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Applications</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "6  Final Words",
+    "section": "",
+    "text": "We have finished a nice book.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Final Words</span>"
+    ]
+  }
+]
