@@ -2,9 +2,12 @@
 
 ## Updating dynamic content
 
-- [Interactions]: re-knit env.Rmd.
+TODO:
+
+- Interactions: re-knit env.Rmd.
 
 ### Shiny App Content Updates
+
 To render changes made to content in a Shiny app, navigate to the folder that contains the application files to run the app. Shiny apps are served from a standard folder where they are symbolically linked to source files. These folders contain the global.R, ui.R, server.R scripts that run the app.
 
 - global.R: functions used in ui.R and server.R can be defined here, sourced here from other files or in loaded libraries

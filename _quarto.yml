@@ -1,0 +1,54 @@
+project:
+  type: book
+  # pre-render: lib/pre-render.R
+  output-dir: _book
+  resources:
+  - "/.nojekyll"
+
+book:
+  title: "MEtkit Help"
+  subtitle: "Marine Energy Toolkit Help"
+  description: "Help documentation to set up, maintain, and use the Marine Energy Toolkit"
+  author:
+  - name: Benjamin D. Best
+    orcid: 0000-0002-2686-0784
+    email: ben@ecoquants.com
+    affiliations:
+      - name: EcoQuants LLC
+        state: CA
+  date: today
+  date-format: "YYYY-MM-DD"
+  site-url: https://marineenergy.github.io/help/
+  repo-url: https://github.com/marineenergy/help/
+  repo-actions: [edit]
+  downloads: [pdf, docx]
+  sharing: [twitter, facebook, linkedin]
+  # google-analytics: "G-V3HZN14Z8G" # TODO: add Google Analytics
+  search: true
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - sysadmins.qmd
+    - rtech.qmd
+    - community.qmd
+    - application.qmd
+    - summary.qmd
+    #- references.qmd
+
+bibliography: ["refs/book.bib", "refs/packages.bib"]
+bibliographystyle: apa
+link-citations: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+  pdf:
+    documentclass: scrreprt
+    # keep-tex: true  # for debugging
+  docx: default
+
+
+
+
