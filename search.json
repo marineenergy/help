@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "MEtkit Help",
+    "title": "MEEtkit Help",
     "section": "",
     "text": "1 Welcome",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#how-to-use-the-help-documentation",
     "href": "index.html#how-to-use-the-help-documentation",
-    "title": "MEtkit Help",
+    "title": "MEEtkit Help",
     "section": "1.1 How to use the help documentation:",
     "text": "1.1 How to use the help documentation:\nThis help documentation is organized by role, including System Administrators (sysadmins), RShiny Application developers (rtech), and community users (community). Information related to corresponding workflows are located in each section of the help documentation.\nFor information related to server setup and location please refer to the sysadmins section of the documentation. For application development methods and existing workflows to update the application please refer to the rtech section of the help. In order to understand how to contribute to the application as a part of the user community please refer to the community section of the documentation.",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#prerequisites",
     "href": "index.html#prerequisites",
-    "title": "MEtkit Help",
+    "title": "MEEtkit Help",
     "section": "1.2 Prerequisites",
     "text": "1.2 Prerequisites\nThis is a sample book written in Markdown. You can use anything that Pandoc’s Markdown supports, e.g., a math equation \\(a^2 + b^2 = c^2\\).\nThe bookdown package can be installed from CRAN or Github:\n\ninstall.packages(\"bookdown\")\n# or the development version\n# devtools::install_github(\"rstudio/bookdown\")\n\nRemember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading #.\nTo compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): https://yihui.name/tinytex/.",
     "crumbs": [
